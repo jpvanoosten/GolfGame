@@ -41,24 +41,24 @@ public:
 	// constructor / destructor
 	Surface( int a_Width, int a_Height, Pixel* a_Buffer, int a_Pitch );
 	Surface( int a_Width, int a_Height );
-	Surface( char* a_File );
+	Surface( const char* a_File );
 	~Surface();
 	// member data access
-	Pixel* GetBuffer() { return m_Buffer; }
+	Pixel* GetBuffer() const { return m_Buffer; }
 	void SetBuffer( Pixel* a_Buffer ) { m_Buffer = a_Buffer; }
-	int GetWidth() { return m_Width; }
-	int GetHeight() { return m_Height; }
-	int GetPitch() { return m_Pitch; }
+	int GetWidth() const { return m_Width; }
+	int GetHeight() const { return m_Height; }
+	int GetPitch() const { return m_Pitch; }
 	void SetPitch( int a_Pitch ) { m_Pitch = a_Pitch; }
 	// Special operations
 	void InitCharset();
-	void SetChar( int c, char* c1, char* c2, char* c3, char* c4, char* c5 );
-	void Centre( char* a_String, int y1, Pixel color );
-	void Print( char* a_String, int x1, int y1, Pixel color );
+	void SetChar( int c, const char* c1, const char* c2, const char* c3, const char* c4, const char* c5 );
+	void Centre( const char* a_String, int y1, Pixel color );
+	void Print( const char* a_String, int x1, int y1, Pixel color );
 	void Clear( Pixel a_Color );
 	void Line( float x1, float y1, float x2, float y2, Pixel color );
 	void Plot( int x, int y, Pixel c );
-	void LoadImage( char* a_File );
+	void LoadImage( const char* a_File );
 	void CopyTo( Surface* a_Dst, int a_X, int a_Y );
 	void BlendCopyTo( Surface* a_Dst, int a_X, int a_Y );
 	void ScaleColor( unsigned int a_Scale );

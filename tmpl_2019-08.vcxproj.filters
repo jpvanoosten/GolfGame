@@ -10,6 +10,9 @@
     <ClCompile Include="src\template.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Ball.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\game.h">
@@ -21,15 +24,18 @@
     <ClInclude Include="inc\template.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="inc\Ball.h">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="inc">
       <UniqueIdentifier>{8b9a0ed5-8d2c-4485-899d-655234699890}</UniqueIdentifier>
-      <Extensions>*.h</Extensions>
+      <Extensions>h</Extensions>
     </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{a56ad8d9-1cca-410b-bfb6-8445a3121b6d}</UniqueIdentifier>
-      <Extensions>*.cpp</Extensions>
+      <Extensions>cpp</Extensions>
     </Filter>
   </ItemGroup>
 </Project>
